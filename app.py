@@ -50,6 +50,13 @@
 # remove_chars("pynative", 4) so output must be tive. Here we need to remove first four characters from a string.
 # remove_chars("pynative", 2) so output must be native. Here we need to remove first two characters from a string.
 
+# def remove_chars(word, num):
+#     x = word[num:]
+#     return x
+
+# remove_chars("gabriel", 3)
+
+
 #####################################################################################################################################
 
 # Exercise 5: Check if the first and last number of a list is the same
@@ -73,8 +80,8 @@
 # Exercise 6: Display numbers divisible by 5 from a list
 # Iterate the given list of numbers and print only those numbers which are divisible by 5
 
-numbers = [5, 10, 15, 18, 25, 49]
+# numbers = [5, 10, 15, 18, 25, 49]
 
-for i in range(len(numbers)):
-    if numbers[i] % 5 == 0:
-        print(numbers[i])
+# for i in range(len(numbers)):
+#     if numbers[i] % 5 == 0:
+#         print(numbers[i])
