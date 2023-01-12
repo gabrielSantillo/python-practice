@@ -19,8 +19,24 @@
 # Exercise 2: Print the sum of the current number and the previous number
 # Write a program to iterate the first 10 numbers and in each iteration, print the sum of the current and previous number.
 
-previous_num = 0
+# previous_num = 0
 
-for number in range(10):
-    print("current " + str(number) + " previous " + str(previous_num) + " - sum: " + str(number + previous_num))
-    previous_num = number
+# for number in range(10):
+#     print("current " + str(number) + " previous " + str(previous_num) + " - sum: " + str(number + previous_num))
+#     previous_num = number
+
+#####################################################################################################################################
+
+# Exercise 3: Print characters from a string that are present at an even index number
+# Write a program to accept a string from the user and display characters that are present at an even index number.
+
+# For example, str = "pynative" so you should display ‘p’, ‘n’, ‘t’, ‘v’.
+
+name = input("Enter a word: ")
+
+size = len(name)
+
+for i in range(0, size):
+    if int(i) % 2 == 0:
+        print(name[i])
+
