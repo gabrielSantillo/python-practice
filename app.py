@@ -32,11 +32,38 @@
 
 # For example, str = "pynative" so you should display ‘p’, ‘n’, ‘t’, ‘v’.
 
-name = input("Enter a word: ")
+# name = input("Enter a word: ")
 
-size = len(name)
+# size = len(name)
 
-for i in range(0, size):
-    if int(i) % 2 == 0:
-        print(name[i])
+# for i in range(0, size):
+#     if int(i) % 2 == 0:
+#         print(name[i])
 
+#####################################################################################################################################
+
+# Exercise 4: Remove first n characters from a string
+# Write a program to remove characters from a string starting from zero up to n and return a new string.
+
+# For example:
+
+# remove_chars("pynative", 4) so output must be tive. Here we need to remove first four characters from a string.
+# remove_chars("pynative", 2) so output must be native. Here we need to remove first two characters from a string.
+
+#####################################################################################################################################
+
+# Exercise 5: Check if the first and last number of a list is the same
+# Write a function to return True if the first and last number of a given list is same. If numbers are different then return False.
+
+numbers = [1,2,3,5]
+
+def match_first_and_last(numbers):
+        first_num = numbers[0]
+        last_num = numbers[-1]
+
+        if first_num == last_num:
+            return True
+        else:
+            return False
+
+print(match_first_and_last(numbers))
