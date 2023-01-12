@@ -55,15 +55,26 @@
 # Exercise 5: Check if the first and last number of a list is the same
 # Write a function to return True if the first and last number of a given list is same. If numbers are different then return False.
 
-numbers = [1,2,3,5]
+# numbers = [1,2,3,5]
 
-def match_first_and_last(numbers):
-        first_num = numbers[0]
-        last_num = numbers[-1]
+# def match_first_and_last(numbers):
+#         first_num = numbers[0]
+#         last_num = numbers[-1]
 
-        if first_num == last_num:
-            return True
-        else:
-            return False
+#         if first_num == last_num:
+#             return True
+#         else:
+#             return False
 
-print(match_first_and_last(numbers))
+# print(match_first_and_last(numbers))
+
+#####################################################################################################################################
+
+# Exercise 6: Display numbers divisible by 5 from a list
+# Iterate the given list of numbers and print only those numbers which are divisible by 5
+
+numbers = [5, 10, 15, 18, 25, 49]
+
+for i in range(len(numbers)):
+    if numbers[i] % 5 == 0:
+        print(numbers[i])
