@@ -155,11 +155,41 @@
 # Exercise 11: Write a Program to extract each digit from an integer in the reverse order.
 # For example, If the given int is 7536, the output shall be “6 3 5 7“, with a space separating the digits.
 
-number = 7536
-print("Given number", number)
-while number > 0:
-    # get the last digit
-    digit = number % 10
-    # remove the last digit and repeat the loop
-    number = number // 10
-    print(digit, end=" ")
+# number = 7536
+# print("Given number", number)
+# while number > 0:
+#     # get the last digit
+#     digit = number % 10
+#     # remove the last digit and repeat the loop
+#     number = number // 10
+#     print(digit, end=" ")
+
+#####################################################################################################################################
+
+# Exercise 12: Calculate income tax for the given income by adhering to the below rules
+# Taxable Income	Rate (in %)
+# First $10,000	0
+# Next $10,000	10
+# The remaining	20
+
+# Expected Output:
+# For example, suppose the taxable income is 45000 the income tax payable is
+# 10000*0% + 10000*10%  + 25000*20% = $6000.
+
+def tax(income):
+    if income <= 10000:
+        tax = 0
+        return tax
+    elif income <= 20000:
+        next = 10000
+        tax = next * .1
+        return tax
+    else:
+        income -= 10000
+        next = 10000
+        tax = next * .1
+        remaining = income - next
+        tax += remaining * .2
+        return tax
+
+tax(45000)
