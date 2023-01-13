@@ -105,8 +105,26 @@
 # 4 4 4 4 
 # 5 5 5 5 5
 
-for num in range(10):
-    for i in range(num):
-        print (num, end=" ") #print number
-    # new line after each row to display pattern correctly
-    print("\n")
+# for num in range(10):
+#     for i in range(num):
+#         print (num, end=" ") #print number
+#     # new line after each row to display pattern correctly
+#     print("\n")
+
+#####################################################################################################################################
+
+# Exercise 9: Check Palindrome Number
+# Write a program to check if the given number is a palindrome number.
+
+# A palindrome number is a number that is same after reverse. For example 545, is the palindrome numbers
+
+number = input("Type in a number: ")
+
+reverse_list = list(reversed(number))
+reverse = ''
+reverse = reverse.join(reverse_list)
+
+if number == reverse:
+    print(True)
+else:
+    print(False)
