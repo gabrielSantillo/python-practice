@@ -91,6 +91,22 @@
 # Exercise 7: Return the count of a given substring from a string
 # Write a program to find how many times substring “Emma” appears in the given string.
 
-str_x = "Emma is good developer. Emma is writer"
+# str_x = "Emma is good developer. Emma is writer"
 
-print(str_x.count("Emma"))
+# print(str_x.count("Emma"))
+
+#####################################################################################################################################
+
+# Exercise 8: Print the following pattern
+
+# 1 
+# 2 2 
+# 3 3 3 
+# 4 4 4 4 
+# 5 5 5 5 5
+
+for num in range(10):
+    for i in range(num):
+        print (num, end=" ") #print number
+    # new line after each row to display pattern correctly
+    print("\n")
