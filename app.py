@@ -176,20 +176,30 @@
 # For example, suppose the taxable income is 45000 the income tax payable is
 # 10000*0% + 10000*10%  + 25000*20% = $6000.
 
-def tax(income):
-    if income <= 10000:
-        tax = 0
-        return tax
-    elif income <= 20000:
-        next = 10000
-        tax = next * .1
-        return tax
-    else:
-        income -= 10000
-        next = 10000
-        tax = next * .1
-        remaining = income - next
-        tax += remaining * .2
-        return tax
+# def tax(income):
+#     if income <= 10000:
+#         tax = 0
+#         return tax
+#     elif income <= 20000:
+#         next = 10000
+#         tax = next * .1
+#         return tax
+#     else:
+#         income -= 10000
+#         next = 10000
+#         tax = next * .1
+#         remaining = income - next
+#         tax += remaining * .2
+#         return tax
 
-tax(45000)
+# tax(45000)
+
+#####################################################################################################################################
+
+# Exercise 13: Print multiplication table form 1 to 10
+
+for i in range(1, 11):
+    for n in range(1, 11):
+        num = i * n
+        print(num, end=" ")
+    print("\t\t")
