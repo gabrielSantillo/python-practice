@@ -136,16 +136,30 @@
 # Create a new list from a two list using the following condition
 # Given a two list of numbers, write a program to create a new list such that the new list should contain odd numbers from the first list and even numbers from the second list.
 
-list1 = [10, 20, 25, 30, 35]
-list2 = [40, 45, 60, 75, 90]
-list3 = []
+# list1 = [10, 20, 25, 30, 35]
+# list2 = [40, 45, 60, 75, 90]
+# list3 = []
 
-for i in range(len(list1)):
-    if list1[i] % 2 != 0:
-        list3.append(list1[i])
+# for i in range(len(list1)):
+#     if list1[i] % 2 != 0:
+#         list3.append(list1[i])
 
-for i in range(len(list2)):
-    if list2[i] % 2 == 0:
-        list3.append(list2[i])
+# for i in range(len(list2)):
+#     if list2[i] % 2 == 0:
+#         list3.append(list2[i])
 
-print(list3)
+# print(list3)
+
+#####################################################################################################################################
+
+# Exercise 11: Write a Program to extract each digit from an integer in the reverse order.
+# For example, If the given int is 7536, the output shall be “6 3 5 7“, with a space separating the digits.
+
+number = 7536
+print("Given number", number)
+while number > 0:
+    # get the last digit
+    digit = number % 10
+    # remove the last digit and repeat the loop
+    number = number // 10
+    print(digit, end=" ")
