@@ -198,8 +198,18 @@
 
 # Exercise 13: Print multiplication table form 1 to 10
 
-for i in range(1, 11):
-    for n in range(1, 11):
-        num = i * n
-        print(num, end=" ")
-    print("\t\t")
+# for i in range(1, 11):
+#     for n in range(1, 11):
+#         num = i * n
+#         print(num, end=" ")
+#     print("\t\t")
+
+#####################################################################################################################################
+
+# Exercise 1: Print First 10 natural numbers using while loop
+
+i = 0
+
+while i < 11:
+    print(i)
+    i += 1
