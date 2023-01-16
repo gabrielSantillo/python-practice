@@ -208,8 +208,20 @@
 
 # Exercise 1: Print First 10 natural numbers using while loop
 
-i = 0
+# i = 0
 
-while i < 11:
-    print(i)
-    i += 1
+# while i < 11:
+#     print(i)
+#     i += 1
+
+#####################################################################################################################################
+
+# Exercise 3: Calculate the sum of all numbers from 1 to a given number
+
+num = input('Enter a number: ')
+num = int(num)
+result = 0
+for i in range(0, int(num) + 1):
+    result += i
+
+print(result)
