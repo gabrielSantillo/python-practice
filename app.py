@@ -245,12 +245,24 @@
 # If the number is greater than 150, then skip it and move to the next number
 # If the number is greater than 500, then stop the loop
 
-numbers = [600, 5, 25, 50, 160, 100, 600]
+# numbers = [600, 5, 25, 50, 160, 100, 600]
 
-for n in numbers:
-    if n >= 500:
-        break
-    elif n >= 150:
-        continue
-    elif n % 5 == 0:
-        print(n)
+# for n in numbers:
+#     if n >= 500:
+#         break
+#     elif n >= 150:
+#         continue
+#     elif n % 5 == 0:
+#         print(n)
+
+#####################################################################################################################################
+
+# Write a program to count the total number of digits in a number using a while loop.
+
+num = 64654654
+count = 0
+while num != 0:
+    num = num // 10
+    count += 1
+
+print(count)
