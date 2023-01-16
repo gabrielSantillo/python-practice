@@ -218,10 +218,21 @@
 
 # Exercise 3: Calculate the sum of all numbers from 1 to a given number
 
-num = input('Enter a number: ')
-num = int(num)
-result = 0
-for i in range(0, int(num) + 1):
-    result += i
+# num = input('Enter a number: ')
+# num = int(num)
+# result = 0
+# for i in range(0, int(num) + 1):
+#     result += i
 
-print(result)
+# print(result)
+
+#####################################################################################################################################
+
+# Write a program to print multiplication table of a given number
+
+num = input("Enter a number: ")
+num = int(num)
+multi = 0
+
+for i in range(1, num + 1):
+    print(num * i)
