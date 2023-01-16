@@ -230,9 +230,27 @@
 
 # Write a program to print multiplication table of a given number
 
-num = input("Enter a number: ")
-num = int(num)
-multi = 0
+# num = input("Enter a number: ")
+# num = int(num)
+# multi = 0
 
-for i in range(1, num + 1):
-    print(num * i)
+# for i in range(1, num + 1):
+#     print(num * i)
+
+#####################################################################################################################################
+
+# Write a program to display only those numbers from a list that satisfy the following conditions
+
+# The number must be divisible by five
+# If the number is greater than 150, then skip it and move to the next number
+# If the number is greater than 500, then stop the loop
+
+numbers = [600, 5, 25, 50, 160, 100, 600]
+
+for n in numbers:
+    if n >= 500:
+        break
+    elif n >= 150:
+        continue
+    elif n % 5 == 0:
+        print(n)
